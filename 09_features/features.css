@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00BFFF;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    z-index: 1;
+    background-color: #00BFFF;
+}
+
+.header__logo {
+    width: 106px;
+    height: 36px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #00BFFF;
+    transition: color, background-color 0.3s;
+}
+
+.nav__item {
+    /* margin: 0 10px; */
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #00BFFF;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color, background-color 0.3s;
+}
+
+.header__logo:hover, .nav__item:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #00BFFF;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(142, 144, 166, 1);
+}
+
+.margin--16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+
+.card__content {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+.card__image-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card__heading {
+    color: rgba(40, 41, 61, 1);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card__follow {
+    text-align: right;
+    position: relative;
+}
+
+.button-rounded {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(142, 144, 166, 1);
+    background-color: rgba(255, 255, 255, 1);
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    transition: background-color 0.5s;
+}
+
+.button-rounded:hover {
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
